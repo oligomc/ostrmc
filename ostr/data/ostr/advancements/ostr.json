@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Oligo's Strings",
+        "description": "Functions for modifying data strings",
+        "icon": {
+            "item": "minecraft:string"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:oligo",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

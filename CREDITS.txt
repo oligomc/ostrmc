@@ -1,0 +1,1 @@
+Method for string flattening in lecterns (used in concat function) proposed by Command Master#9812. Implemented and optimized in this data pack by oligmc. All other assets written by oligomc (IGN: Oligo). 
