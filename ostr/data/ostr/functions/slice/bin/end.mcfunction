@@ -17,4 +17,4 @@ data modify block ~ ~1 ~ front_text.messages[0] set value '{"nbt":"temp.slice.co
 execute if score $ebit0 ostr.global matches 0 run data modify storage ostr:data temp.slice.trunc set string block ~ ~1 ~ front_text.messages[0] 9 65545
 execute if score $ebit0 ostr.global matches 1 run data modify storage ostr:data temp.slice.trunc set string block ~ ~1 ~ front_text.messages[0] 8 65544
 # if text of this length is rendered on sign by player the game will crash, so text is reset
-data modify block ~ ~1 ~ front_text.messages[0] set value '{"text":""}'
+# data modify block ~ ~1 ~ front_text.messages[0] set value '{"text":""}'

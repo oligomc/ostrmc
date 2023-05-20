@@ -1,7 +1,8 @@
-# evaluate characters
-function ostr:concat/loop/main
+execute store result score $i ostr.global run data get storage ostr:data temp.int2hex.in
+execute if score $i ostr.global matches 1.. run function ostr:int2hex/loop/main
+data modify storage ostr:data temp.concat.lect insert 1 from storage ostr:data temp.int2hex.hex[]
 
-# concat
+# conc
 data modify block ~ ~1 ~ front_text.messages[0] set value '{"nbt":"temp.concat.lect[]", "storage": "ostr:data"}'
 data modify block ~ ~ ~ Book.tag.pages[0] set string block ~ ~1 ~ front_text.messages[0] 9
 data remove block ~ ~ ~ Book.tag.resolved

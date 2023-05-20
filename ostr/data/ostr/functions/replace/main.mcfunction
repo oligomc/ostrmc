@@ -1,0 +1,4 @@
+data merge storage ostr:data {temp:{check:{string:[""]}, find:{str:"", pstr:[], val:"", pval:[]}, concat:{lect:["{text:a,hoverEvent:{action:show_item,value:['{tag:{a:\"'", "'\"}}']}}                       "], scaff:["{text:a,hoverEvent:{action:show_item,value:['{tag:{a:\"'", "'\"}}']}}                       "], build:[], in:[], check:""}, slice:{conc:[], trunc:""}}}
+execute store result score $i ostr.global run data get storage ostr:io in.string
+execute store result score $j ostr.global store result score $m ostr.global run data get storage ostr:io in.old
+execute if score $j ostr.global matches 1.. if score $i ostr.global >= $j ostr.global run function ostr:replace/nest

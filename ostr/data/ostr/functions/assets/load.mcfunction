@@ -8,11 +8,12 @@ summon marker 29999984 -64.5 43392 {Tags:["global.forceload", "global.ignore", "
 # scoreboards
 scoreboard objectives add ostr.global dummy
 scoreboard players set #2 ostr.global 2
+scoreboard players set #-1 ostr.global -1
 
 # data storages
-data merge storage ostr:io {in:{string:"", array:[], start:0, end:0}, out:""}
+data merge storage ostr:io {in:{string:"", array:[], value:"", start:0, end:0, count:2147483647}, out:""}
 data merge storage ostr:data {temp:{check:{string:[""], int:[I;], byte:[B;]}}}
 
 # blocks
 setblock 29999984 -63 43392 oak_sign
-setblock 29999984 -64 43392 lectern[has_book=true]{Book:{id:"minecraft:written_book", Count:1b,tag:{pages:["", ""], author:"a", title:"a", resolved:1b}}}
+setblock 29999984 -64 43392 lectern{Book:{id:"minecraft:written_book", Count:1b,tag:{pages:["", ""], author:"a", title:"a", resolved:1b}}}
